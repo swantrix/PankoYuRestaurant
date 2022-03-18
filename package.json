@@ -1,10 +1,29 @@
 {
   "name": "pankoyurestaurant",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Panko Yu sushi restaurant webpage",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swantrix/PankoYuRestaurant.git"
+  },
+  "keywords": [
+    "sushi",
+    "restaurant",
+    "jeff"
+  ],
+  "author": "Group18",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swantrix/PankoYuRestaurant/issues"
+  },
+  "homepage": "https://github.com/swantrix/PankoYuRestaurant#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
