@@ -23,7 +23,7 @@
   "homepage": "https://github.com/swantrix/PankoYuRestaurant#readme",
   "dependencies": {
     "express": "^4.17.3"
-  }
+  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
