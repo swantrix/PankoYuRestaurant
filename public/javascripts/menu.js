@@ -570,7 +570,7 @@ function drawCart() {
     }
 }
 
-function totalPrice () {
+function totalPrice() {
     let price = 0;
     for (let menuSection of fullMenu.categories) {
         for (let menuItem of menuSection.foodItems) {
@@ -603,7 +603,7 @@ function addItemsToCart(cartItems) {
     }
 }
 
-function createSubmit(){
+function createSubmit() {
     let submitButton = document.createElement('button');
     let submitText = document.createTextNode('Submit your order');
     submitButton.setAttribute("type", "submit");
@@ -616,9 +616,14 @@ function createSubmit(){
 
 function submitOrder(e) {
     let inputFields = document.querySelectorAll(".product__quantity");
-    for (let inputField of inputFields) {
-        inputField.value = 0;
-        changeProductQuantity(inputField.name, inputField.value);
+    if (totalPrice() == 0) {
+        alert("Cannot submit order. Your cart is empty.");
     }
-    alert("Your order has been submitted.")
+    else {
+        for (let inputField of inputFields) {
+            inputField.value = 0;
+            changeProductQuantity(inputField.name, inputField.value);
+        }
+        alert("Your order has been submitted.")
+    }
 }
