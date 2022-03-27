@@ -6,6 +6,8 @@ var options = {
     resave: false,
     saveUninitialized: true
                };
+//library that generates universally unique ID's
+const uuidv4 = require("uuid/v4");
 var path = require('path');
 var morgan = require('morgan');
 var sqlite3 = require('sqlite3').verbose();
